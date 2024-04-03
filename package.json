@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A Porfolio Website for my Web Development Career",
+  "scripts": {
+    "dev": "parcel 'src/*.html'",
+    "build": "parcel build 'src/*.html' --dist-dir ./public"
+  },
+  "author": "Kehinde Yishawu",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@parcel/compressor-gzip": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}
