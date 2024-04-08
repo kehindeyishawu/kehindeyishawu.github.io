@@ -9,7 +9,8 @@
   "author": "Kehinde Yishawu",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
   },
   "devDependencies": {
     "@parcel/compressor-gzip": "^2.12.0",

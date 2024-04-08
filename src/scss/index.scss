@@ -1,6 +1,28 @@
-  @import "./config";
+  @import "config";
+  @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 // $dark: #020101;
 
-  h1{
-    background-color: red;
+  .navbar a{
+    color: $gray-600;
+    font-size: 0.8rem;
+    &:hover{
+      color: $white;
+    }
+  }
+  a.navbar-brand{
+    color: $white;
+    font-size: 1.6rem;
+  }
+  .navbar .nav-link.active {
+    color: $secondary;
+    text-decoration: underline;
+  }
+  .bi-linkedin, .bi-github, .bi-youtube{
+    color: $white;
+    font-size: 1rem;
+  }
+  .bi.bi-arrow-right{
+    background-color: $red-400;
+    padding: 0.5rem;
+    border-radius: 20%;
   }
