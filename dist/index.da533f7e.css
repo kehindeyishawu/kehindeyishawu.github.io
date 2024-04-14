@@ -8439,10 +8439,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
-h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
-}
-
 @media (width >= 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
@@ -21423,6 +21419,10 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+h1, .h1 {
+  font-size: 33px;
+}
+
 a.navbar-brand {
   color: #fff;
   font-size: 1.6rem;
@@ -21442,5 +21442,14 @@ a.navbar-brand {
   background-color: #e35d6a;
   border-radius: 20%;
   padding: .5rem;
+}
+
+.intro p {
+  font-weight: bolder;
+}
+
+.intro .btn-danger {
+  color: red;
+  flex-basis: 30px;
 }
 /*# sourceMappingURL=index.da533f7e.css.map */
