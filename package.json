@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A Porfolio Website for my Web Development Career",
   "scripts": {
-    "dev": "parcel 'src/*.html'",
-    "build": "parcel build 'src/*.html' --dist-dir ./public"
+    "dev": "vite",
+    "build": "vite build"
   },
   "author": "Kehinde Yishawu",
   "license": "ISC",
@@ -13,8 +13,7 @@
     "bootstrap-icons": "^1.11.3"
   },
   "devDependencies": {
-    "@parcel/compressor-gzip": "^2.12.0",
-    "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0"
+    "sass": "^1.75.0",
+    "vite": "^5.2.8"
   }
 }
