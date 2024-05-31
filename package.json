@@ -4,6 +4,7 @@
   "description": "A Porfolio Website for my Web Development Career",
   "scripts": {
     "dev": "vite",
+    "preview": "vite preview",
     "build": "vite build"
   },
   "author": "Kehinde Yishawu",
