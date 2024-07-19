@@ -43,30 +43,38 @@
         margin-bottom: 40px;
       }
       .first-typing{
-        position: relative;
-        width: max-content;
+        @extend %type-writer-style;
         &:before{
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          animation: typewriter 2s steps(3) forwards 2s;
+          transform-origin: right;
+          animation: typewriter 1s steps(3) forwards 2s;
           background-color: var(--dark);
         }
         &:after{
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
           border-left: 0.06em solid var(--bs-danger);
+          opacity: 0;
           animation: 
-          typewriter 2s steps(3) forwards 2s,
-          blink 900ms linear infinite;
+          blinker-movement 1s steps(3) forwards 2s,
+          blinker 850ms linear 3.5;
         }
+      }
+      .second-typing{
+        @extend %type-writer-style;
+        &:before{
+          transform-origin: right;
+          animation: typewriter 2s steps(10) forwards 3.5s;
+          background-color: var(--dark);
+        }
+        &:after{
+          border-left: 0.06em solid white;
+          opacity: 0;
+          animation: 
+          blinker-movement 2s steps(10) forwards 3.5s,
+          blinker 850ms linear infinite 3s;
+        }
+      }
+      .show-up{
+        opacity: 0;
+        animation: float-up 1s ease-out 5.5s forwards;
       }
     }
 // Hero Buttons
@@ -90,42 +98,47 @@
     }
   }
 
+@keyframes typewriter {
+  to {
+    transform: scaleX(0);
+  }
+}
+@keyframes blinker {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blinker-movement {
+  to {
+    translate: 100%;
+  }
+}
+@keyframes float-up{
+  from {
+    translate: 0 -15px;
+  }
+  to {
+    translate: 0;
+    opacity: 1;
+  }
+}
+
 // About Section
 
 
-// Queries
-  @media (max-width: 767px) {
-    #banner-img{
-      position: absolute;
-      top: 49px;
-      right: 0;
-      img{
-        width: 260px;
-        min-width: 0;
-      }
+// RESPONSIVENESS ************************************************************************************
+@media (max-width: 767px) {
+  #banner-img {
+    position: absolute;
+    top: 49px;
+    right: 0;
+    img {
+      width: 260px;
+      min-width: 0;
     }
   }
-  @keyframes typewriter {
-    to {
-      // transform: scaleX(0);
-      translate: 100%;
-    }
-  }
-  @keyframes blink {
-    to {
-      opacity: 0;
-    }
-  }
+}
 
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-} */
-/* .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-} */
 
 /* @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
