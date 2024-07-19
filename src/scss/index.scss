@@ -1,8 +1,9 @@
-  @import "config";
-// $dark: #020101;
+  @use "config" as *;
 
+
+// Nav Style
   .navbar a{
-    color: $white;
+    color: white;
     font-size: 0.8rem;
     &:hover{
       color: $gray-600;
@@ -12,18 +13,19 @@
     h1{
         font-size: 33px;
     }
-    color: $white;
+    transition: color 0.6s ease-in-out;
     &:hover{
       color: $info;
+      filter: drop-shadow(0 0 2em #646cffaa);
     }
   }
   .bi-list{
     width: 35px;
     margin-bottom: 15px;
-    stroke: $white;
+    stroke: white;
   }
   .bi-linkedin, .bi-github, .bi-youtube{
-    fill: $white;
+    fill: white;
     width: 1rem;
   }
   // arrow in the dashboard button
@@ -31,6 +33,7 @@
     margin-left: 34%;
     width: 1.7rem;
   }
+// Hero Section
   #intro{
     z-index: 1;
     #intro-content{
@@ -39,8 +42,34 @@
       div:nth-of-type(1){
         margin-bottom: 40px;
       }
+      .first-typing{
+        position: relative;
+        width: max-content;
+        &:before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          animation: typewriter 2s steps(3) forwards 2s;
+          background-color: var(--dark);
+        }
+        &:after{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-left: 0.06em solid var(--bs-danger);
+          animation: 
+          typewriter 2s steps(3) forwards 2s,
+          blink 900ms linear infinite;
+        }
+      }
     }
-    // button in the dashboard
+// Hero Buttons
     .btn-danger{
       font-weight: bold;
       width: 50%;
@@ -60,6 +89,11 @@
       min-width: 350px;
     }
   }
+
+// About Section
+
+
+// Queries
   @media (max-width: 767px) {
     #banner-img{
       position: absolute;
@@ -71,7 +105,30 @@
       }
     }
   }
-  #about{
-    position: relative;
-    z-index: 1;
+  @keyframes typewriter {
+    to {
+      // transform: scaleX(0);
+      translate: 100%;
+    }
   }
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+} */
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
