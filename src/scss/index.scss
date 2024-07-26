@@ -1,39 +1,43 @@
   @use "config" as *;
 
+  :root{
+    --svg-animation: ;
+  }
 
-// Nav Style
+// Nav **************************************************************8
   .navbar a{
     color: white;
     font-size: 0.8rem;
     &:hover{
-      color: $gray-600;
+      color: var(--bs-gray-600);
     }
   }
   a.navbar-brand{
     h1{
         font-size: 33px;
     }
-    transition: color 0.6s ease-in-out;
+    transition: color 0.3s ease-in-out;
     &:hover{
-      color: $info;
-      filter: drop-shadow(0 0 2em #646cffaa);
+      color: var(--bs-info);
+      filter: drop-shadow(0 0 2em var(--bs-info));
     }
   }
   .bi-list{
     width: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     stroke: white;
   }
   .bi-linkedin, .bi-github, .bi-youtube{
     fill: white;
     width: 1rem;
   }
+
+// Hero Section ***********************************************************************
   // arrow in the dashboard button
   .arrow-box{
     margin-left: 34%;
     width: 1.7rem;
   }
-// Hero Section
   #intro{
     z-index: 1;
     #intro-content{
@@ -54,7 +58,7 @@
           opacity: 0;
           animation: 
           blinker-movement 1s steps(3) forwards 2s,
-          blinker 850ms linear 3.5;
+          blinker 430ms linear alternate 8;
         }
       }
       .second-typing{
@@ -69,12 +73,14 @@
           opacity: 0;
           animation: 
           blinker-movement 2s steps(10) forwards 3.5s,
-          blinker 850ms linear infinite 3s;
+          blinker 430ms linear infinite alternate 3s;
         }
       }
-      .show-up{
-        opacity: 0;
-        animation: float-up 1s ease-out 5.5s forwards;
+      @media (prefers-reduced-motion: no-preference) {
+        .show-up{
+          opacity: 0;
+          animation: float-up 1s ease-out 5.5s forwards;
+        }
       }
     }
 // Hero Buttons
@@ -91,13 +97,34 @@
   #skill-list{
     height: 100%;
     justify-content: space-evenly;
+    svg{
+      flex-basis: 350px;
+      // flex-basis max is 431px
+      use {
+        opacity: 0;
+        // animation: fade-in 3s ease-out infinite;
+        // animation-play-state: paused;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        // .plaused-animation{
+          // come back here when you want to try js triggered animation again
+        // }
+        .play-animation{
+          animation-play-state: running;
+        }
+      }
+      .appear{
+        opacity: 1;
+        transition: opacity 1s ease-out;
+      }
+    }
   }
   #banner-img{
     img{
       min-width: 350px;
     }
   }
-
+// Type-Writer Animation
 @keyframes typewriter {
   to {
     transform: scaleX(0);
@@ -122,6 +149,31 @@
     opacity: 1;
   }
 }
+// SVG Animation
+// translate restriction: 15px or 12%
+// scale restriction: 1.2
+
+@keyframes fade-in {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in{
+  0%{
+    translate: -150%;
+  }
+  50%{
+    translate: 180;
+  }
+  100%{
+    translate: 0;
+    opacity: 1;
+  }
+}
 
 // About Section
 
@@ -140,8 +192,8 @@
 }
 
 
-/* @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-} */
+// @media (prefers-reduced-motion: no-preference) {
+//   a:nth-of-type(2) .logo {
+//     animation: logo-spin infinite 20s linear;
+//   }
+// }

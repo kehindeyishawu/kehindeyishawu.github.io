@@ -1,0 +1,5 @@
+Revisit trying out animation, remember the animation could repeat twice in a role, so try out that stack-overflow advice on how to go about it
+Optimize images
+- navbar icons= convert to png (except hamburger toggle icon)
+- Developer image on hero = convert to avif and webp as fall back
+- Delete either Logo or Favicon image and use one for both places. Just read more about favicon from the open tab

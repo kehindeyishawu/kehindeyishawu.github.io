@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./image/logo.svg" />
+    <link rel="icon" type="image/png" href="./image/developer-logo.png" />
     <title>Kehinde Yishawu Portfolio</title>
     <script type="module" src="./js/index.js"></script>
 </head>
@@ -14,7 +14,6 @@
                 <a class="navbar-brand" href="#"><h1>Kehinde Yishawu</h1></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list text-light display-5"></i>
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list"
                         viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -61,7 +60,7 @@
     <main>
         <section class="dark text-light container-fluid">
             <div class="row justify-content-around">
-                <div id="intro" class="col-lg-3 col-md-5 py-3 py-md-0">
+                <div id="intro" class="col-md-auto py-3 py-md-0">
                     <div class="d-flex flex-column" id="intro-content">
                         <div>
                             <div class="display-5 fw-bold mb-2 text-danger first-typing font-monospace">Hi,</div>
@@ -81,20 +80,34 @@
                             </button>
                         </div>
                         <div id="my-logo" class="fw-bold">
-                            <img src="image/tech_kenny4.png" alt="" width="70px"> Tech_Kenny
+                            <img src="image/developer-logo.png" alt="Developer's Logo" width="70px"> Tech_Kenny
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-5">
                     <picture id="banner-img">
-                        <source media="(max-width: 767px)" srcset="./image/Port-image-mobile.png">
-                        <img src="./image/Portfolio-image.png" class="img-fluid" alt="Developer' Image">
+                        <source media="(max-width: 767px)" srcset="./image/developer-image-mobile.webp" type="img/webp">
+                        <source media="(max-width: 767px)" srcset="./image/developer-image-mobile.jpeg" type="image/jpeg">
+                        <source srcset="./image/developer-image.webp" type="image/webp">
+                        <img src="./image/developer-image.jpeg" class="img-fluid" alt="Developer' Image">
                     </picture>
                 </div>
                 <div class="col-lg-4 d-none d-lg-block">
-                    <div id="skill-list" class="d-flex flex-column align-items-center">
+                    <div id="skill-list" class="d-flex flex-column text-center">
                         <span class="fw-bold">Expert on</span>
-                        <img src="./image/css-2.png" alt="css image" class="img-fluid">
+                        <svg id="hero-svgs">
+                            <use href="./image/Sprite.svg#svg-react"  class="appear"></use>
+                            <use href="./image/Sprite.svg#svg-git"></use>
+                            <use href="./image/Sprite.svg#svg-node"></use>
+                            <use href="./image/Sprite.svg#svg-express"></use>
+                            <use href="./image/Sprite.svg#svg-bootstrap"></use>
+                            <use href="./image/Sprite.svg#svg-mongo"></use>
+                            <use href="./image/Sprite.svg#svg-css"></use>
+                            <use href="./image/Sprite.svg#svg-html"></use>
+                            <use href="./image/Sprite.svg#svg-js"></use>
+                            <use href="./image/Sprite.svg#svg-linux"></use>
+                            <use href="./image/Sprite.svg#svg-py"></use>
+                        </svg>
                         <div>
                             Based in Lagos, Nigeria.
                         </div>
