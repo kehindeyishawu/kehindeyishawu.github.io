@@ -4,8 +4,43 @@
 :root{
     --dark: #020101;
 }
-.dark {
+.dark-background {
     background-color: var(--dark);
+}
+.lower-outline{
+    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &:after {
+        content: "";
+        margin: auto auto;
+        margin-bottom: 0;
+        width: 25%;
+        height: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bs-info);
+    }
+
+    &::before {
+        content: "";
+        margin: auto auto -3px auto;
+        width: 4%;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bs-info);
+    }
+}
+.top-spacing{
+    margin-top: 5rem;
 }
 %type-writer-style{
     content: "";

@@ -1,129 +1,129 @@
-  @use "config" as *;
+@use "config" as *;
 
-  :root{
-    --svg-animation: ;
-  }
+:root{
+  --svg-animation: ;
+}
 
 // Nav **************************************************************8
-  .navbar a{
-    color: white;
-    font-size: 0.8rem;
-    &:hover{
-      color: var(--bs-gray-600);
-    }
+.navbar a{
+  color: white;
+  font-size: 0.8rem;
+  &:hover{
+    color: var(--bs-gray-600);
   }
-  a.navbar-brand{
-    h1{
-        font-size: 33px;
-    }
-    transition: color 0.3s ease-in-out;
-    &:hover{
-      color: var(--bs-info);
-      filter: drop-shadow(0 0 2em var(--bs-info));
-    }
+}
+a.navbar-brand{
+  h1{
+      font-size: 33px;
   }
-  .bi-list{
-    width: 35px;
-    margin-bottom: 10px;
-    stroke: white;
+  transition: color 0.3s ease-in-out;
+  &:hover{
+    color: var(--bs-info);
+    filter: drop-shadow(0 0 2em var(--bs-info));
   }
-  .bi-linkedin, .bi-github, .bi-youtube{
-    fill: white;
-    width: 1rem;
-  }
+}
+.bi-list{
+  width: 35px;
+  margin-bottom: 10px;
+  stroke: white;
+}
+.bi-linkedin, .bi-github, .bi-youtube{
+  fill: white;
+  width: 1rem;
+}
 
 // Hero Section ***********************************************************************
-  // arrow in the dashboard button
-  .arrow-box{
-    margin-left: 34%;
-    width: 1.7rem;
-  }
-  #intro{
-    z-index: 1;
-    #intro-content{
-      justify-content: space-evenly;
-      height: 100%;
-      div:nth-of-type(1){
-        margin-bottom: 40px;
-      }
-      .first-typing{
-        @extend %type-writer-style;
-        &:before{
-          transform-origin: right;
-          animation: typewriter 1s steps(3) forwards 2s;
-          background-color: var(--dark);
-        }
-        &:after{
-          border-left: 0.06em solid var(--bs-danger);
-          opacity: 0;
-          animation: 
-          blinker-movement 1s steps(3) forwards 2s,
-          blinker 430ms linear alternate 8;
-        }
-      }
-      .second-typing{
-        @extend %type-writer-style;
-        &:before{
-          transform-origin: right;
-          animation: typewriter 2s steps(10) forwards 3.5s;
-          background-color: var(--dark);
-        }
-        &:after{
-          border-left: 0.06em solid white;
-          opacity: 0;
-          animation: 
-          blinker-movement 2s steps(10) forwards 3.5s,
-          blinker 430ms linear infinite alternate 3s;
-        }
-      }
-      @media (prefers-reduced-motion: no-preference) {
-        .show-up{
-          opacity: 0;
-          animation: float-up 1s ease-out 5.5s forwards;
-        }
-      }
-    }
-// Hero Buttons
-    .btn-danger{
-      font-weight: bold;
-      width: 50%;
-      min-width: 156px;
-      max-width: 159px;
-      padding: 0.6rem;
-      padding-right: 0;
-      padding-left: 7px;
-    }
-  }
-  #skill-list{
-    height: 100%;
+// arrow in the dashboard button
+.arrow-box{
+  margin-left: 34%;
+  width: 1.7rem;
+}
+#intro{
+  z-index: 1;
+  #intro-content{
     justify-content: space-evenly;
-    svg{
-      flex-basis: 350px;
-      // flex-basis max is 431px
-      use {
+    height: 100%;
+    div:nth-of-type(1){
+      margin-bottom: 40px;
+    }
+    .first-typing{
+      @extend %type-writer-style;
+      &:before{
+        transform-origin: right;
+        animation: typewriter 1s steps(3) forwards 2s;
+        background-color: var(--dark);
+      }
+      &:after{
+        border-left: 0.06em solid var(--bs-danger);
         opacity: 0;
-        // animation: fade-in 3s ease-out infinite;
-        // animation-play-state: paused;
+        animation: 
+        blinker-movement 1s steps(3) forwards 2s,
+        blinker 430ms linear alternate 8;
       }
-      // @media (prefers-reduced-motion: no-preference) {
-      //   .plaused-animation{
-      //     come back here when you want to try js triggered animation again
-      //   }
-      //   .play-animation{
-      //     animation-play-state: running;
-      //   }
-      // }
-      .appear{
-        opacity: 1;
-        transition: opacity 1s ease-out;
+    }
+    .second-typing{
+      @extend %type-writer-style;
+      &:before{
+        transform-origin: right;
+        animation: typewriter 2s steps(10) forwards 3.5s;
+        background-color: var(--dark);
+      }
+      &:after{
+        border-left: 0.06em solid white;
+        opacity: 0;
+        animation: 
+        blinker-movement 2s steps(10) forwards 3.5s,
+        blinker 430ms linear infinite alternate 3s;
+      }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .show-up{
+        opacity: 0;
+        animation: float-up 1s ease-out 5.5s forwards;
       }
     }
   }
-  #banner-img{
-    img{
-      min-width: 350px;
+// Hero Buttons
+  .btn-danger{
+    font-weight: bold;
+    width: 50%;
+    min-width: 156px;
+    max-width: 159px;
+    padding: 0.6rem;
+    padding-right: 0;
+    padding-left: 7px;
+  }
+}
+#skill-list{
+  height: 100%;
+  justify-content: space-evenly;
+  svg{
+    flex-basis: 350px;
+    // flex-basis max is 431px
+    use {
+      opacity: 0;
+      // animation: fade-in 3s ease-out infinite;
+      // animation-play-state: paused;
+    }
+    // @media (prefers-reduced-motion: no-preference) {
+    //   .plaused-animation{
+    //     come back here when you want to try js triggered animation again
+    //   }
+    //   .play-animation{
+    //     animation-play-state: running;
+    //   }
+    // }
+    .appear{
+      opacity: 1;
+      transition: opacity 1s ease-out;
     }
   }
+}
+#banner-img{
+  img{
+    min-width: 350px;
+  }
+}
 // Type-Writer Animation
 @keyframes typewriter {
   to {
@@ -174,7 +174,10 @@
 // SVG Animation in development for now
 
 // About Section ***************************************************************
-
+#about{
+  position: relative;
+  z-index: 1;
+}
 
 // RESPONSIVENESS ************************************************************************************
 @media (max-width: 767px) {
