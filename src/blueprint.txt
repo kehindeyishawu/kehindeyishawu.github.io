@@ -1,4 +1,9 @@
 Revisit trying out animation, remember the animation could repeat twice in a role, so try out that stack-overflow advice on how to go about it
+
+put a shadow overlay on the bottom of the hero image (look into css mask)
+
+look into using the intersection observer to stop hero-animation once viewers scroll past the hero section
+
 Optimize images
 - navbar icons= convert to png (except hamburger toggle icon)
 - Developer image on hero = convert to avif and webp as fall back

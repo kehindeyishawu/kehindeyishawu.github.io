@@ -173,10 +173,67 @@ a.navbar-brand{
 }
 // SVG Animation in development for now
 
-// About Section ***************************************************************
+// About Section ##############################################################
 #about{
   position: relative;
   z-index: 1;
+}
+
+// top-skills Section #################################################################
+#top-skills{
+  .skill-img{
+    background-color: var(--bs-danger);
+    img{
+      translate: 35px -25px;
+    }
+  }
+  h2{
+    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
+    position: relative;
+    &:after {
+        content: "";
+        // margin: auto auto;
+        margin-top: auto;
+        width: 25%;
+        height: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bs-info);
+    }
+    &::before {
+        content: "";
+        margin: auto auto -3px 10%;
+        width: 4%;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bs-info);
+    }
+  }
+  .skill-set{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    svg{
+      width: 1.4em;
+      height: 1.4em;
+    }
+    .svg-skill-increase{
+      width: 2em;
+    }
+    div{
+      padding: 10px;
+      background-color: var(--bs-dark);
+      border-radius: 3%;
+    }
+  }
 }
 
 // RESPONSIVENESS ************************************************************************************
