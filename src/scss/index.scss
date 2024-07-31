@@ -256,6 +256,21 @@ a.navbar-brand{
   }
 }
 
+// Journey Section ############################################################
+#journey{
+  flex-wrap: wrap;
+  img{
+    width: 50%;
+  }
+  gap: 0;
+  iframe{
+    aspect-ratio: 16/9;
+    flex-grow: 1;
+  }
+  
+}
+
+
 // RESPONSIVENESS ************************************************************************************
 @media (max-width: 767px) {
   #banner-img {
@@ -265,6 +280,11 @@ a.navbar-brand{
     img {
       width: 260px;
       min-width: 0;
+    }
+  }
+  #journey{
+    img{
+      width: 100%;
     }
   }
 }
