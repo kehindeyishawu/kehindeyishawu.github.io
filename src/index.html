@@ -127,15 +127,20 @@
             </p>
         </section>
         <section class="top-spacing container" id="top-skills">
-            <div class="row justify-content-around gy-5 align-items-center">
+            <div class="row justify-content-center gy-5 align-items-center">
                 <div class="col-md-4">
                     <div class="skill-img">
                         <picture>
-                            <img src="./image/Skill-image.png" class="img-fluid" alt="Image of Web Developer">
+                            <source media="(max-width: 767px)" srcset="./image/devskill-image-sm.webp" type="img/webp">
+                            <source media="(max-width: 767px)" srcset="./image/devskill-image-sm.jpeg" type="image/jpeg">
+                            <source media="(max-width: 1366px)" srcset="./image/devskill-image-lg.webp" type="image/webp">
+                            <source media="(max-width: 1366px)" srcset="../image/devskill-image-lg.jpeg" type="image/jpeg">
+                            <source srcset="./image/developer-image.webp" type="image/webp">
+                            <img src="./image/devskill-image-sm.jpeg" class="img-fluid" alt="Image of Web Developer">
                         </picture>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <h2>Top Skills</h2>
                     <div class="skill-set">
                         <div>React | <svg><use href="./image/Sprite.svg#svg-react"></use></svg> </div>

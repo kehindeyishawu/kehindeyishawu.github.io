@@ -19,9 +19,22 @@ let startHeroSvgAimation= ()=>{
         svgCounter++
         heroSvgs[svgCounter] || (svgCounter = 0)
         heroSvgs[svgCounter].classList.add('appear')
-        console.log(`${svgCounter} round`)
+        // console.log(`${svgCounter} round`)
     }, 3000)
-    console.log(svgAnimationId)
 }
 
 startHeroSvgAimation()
+// ########################################################################
+
+let skills = document.getElementsByClassName("skill-set")[0]
+const viewPortObserver = new IntersectionObserver((entry)=>{
+    entry.forEach((e)=>{
+        e.target === skills ? e.target.classList.toggle("viewable", e.isIntersecting) : null
+        // e.target === skills ? e.target.classList.toggle("viewable", e.isIntersecting) : null
+        console.log(e.intersectionRatio)
+    })
+}, {
+    threshold: 0.2
+})
+
+viewPortObserver.observe(skills)

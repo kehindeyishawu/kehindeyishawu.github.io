@@ -184,7 +184,13 @@ a.navbar-brand{
   .skill-img{
     background-color: var(--bs-danger);
     img{
-      translate: 35px -25px;
+      position: relative;
+      top: -1.5rem;
+      right: 2rem;
+      transition: translate 0.3s;
+      &:hover{
+        translate: 2rem 1.5rem;
+      }
     }
   }
   h2{
@@ -193,7 +199,6 @@ a.navbar-brand{
     position: relative;
     &:after {
         content: "";
-        // margin: auto auto;
         margin-top: auto;
         width: 25%;
         height: 3px;
@@ -221,6 +226,8 @@ a.navbar-brand{
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
+    transition: opacity 0.8s;
+    opacity: 0;
     svg{
       width: 1.4em;
       height: 1.4em;
@@ -233,6 +240,19 @@ a.navbar-brand{
       background-color: var(--bs-dark);
       border-radius: 3%;
     }
+  }
+  .viewable {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from  {
+    translate: -50%;
+  }
+  to  {
+    translate: 0;
+    opacity: 1;
   }
 }
 
