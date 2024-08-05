@@ -2,14 +2,14 @@
 
 // Then add additional custom code here
 :root{
-    --dark: #020101;
+    --dark: hsl(0, 33%, 1%);
 }
 .dark-background {
     background-color: var(--dark);
 }
 .lower-outline{
-    padding-bottom: 0.7rem;
-    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 2rem;
     position: relative;
     text-align: center;
     &:after {

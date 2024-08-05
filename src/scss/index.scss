@@ -270,6 +270,53 @@ a.navbar-brand{
   
 }
 
+// Price-plan Section ########################################################
+#price-plan{
+  h2{
+    padding-bottom: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    position: relative;
+    text-align: center;
+    &::before {
+      content: "";
+      margin: -7px auto auto auto;
+      width: 9%;
+      height: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--bs-danger);
+      opacity: .8;
+    }
+  }
+  .price-icon{
+    font-size: 3rem;
+  }
+  .price-icon-svg{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.8rem 0;
+  }
+  .cost{
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  .terms{
+    svg{
+      vertical-align: middle;
+      width: 1.2rem; height: 1.2rem;
+    }
+  }
+}
+
+// bottom-placeholder#############################################
+#bottom-placeholder{
+padding: 10rem 0;
+}
 
 // RESPONSIVENESS ************************************************************************************
 @media (max-width: 767px) {
