@@ -1,14 +1,14 @@
 @use "config" as *;
 
-:root{
-  --svg-animation: ;
-}
 
 // Nav **************************************************************8
 .navbar a{
   color: white;
   font-size: 0.8rem;
   &:hover{
+    color: var(--bs-gray-600);
+  }
+  &:focus{
     color: var(--bs-gray-600);
   }
 }
@@ -20,6 +20,9 @@ a.navbar-brand{
   &:hover{
     color: var(--bs-info);
     filter: drop-shadow(0 0 2em var(--bs-info));
+  }
+  &:focus{
+    color: var(--bs-info);
   }
 }
 .bi-list{
@@ -313,9 +316,183 @@ a.navbar-brand{
   }
 }
 
-// bottom-placeholder#############################################
-#bottom-placeholder{
-padding: 10rem 0;
+// Floating-svgs Section ##############################################################
+#floating-svgs {
+  text-align: center;
+  padding: 8rem 0;
+  svg {
+    width: 50%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #floating-ubuntu{
+      translate: -150px -380px;
+      scale: .80412;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: rotate 4.5s linear infinite;
+    }
+    #floating-mongo{
+      opacity: 0.2;
+      animation: blinker 1s ease-in infinite alternate;
+    }
+    #floating-nodejs{
+      animation: wiggle 2s linear infinite;
+    }
+    #shadow3{
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: shrink 2s linear infinite;
+    }
+    #floating-python{
+      transform-origin: center bottom;
+      transform-box: fill-box;
+      animation: bounce 1s infinite;
+    }
+    #shadow4{
+      transform: translate(-435px, -295px);
+      transform-origin: left right center;
+      animation: shrink 1s ease-out infinite
+    }
+    #git-float{
+      transform-origin: center;
+      transform-box: fill-box;
+      translate: 2px -13px;
+      animation: flip 4s ease-out infinite alternate;
+    }
+    // #floating-git{ you can uncomment and use this to animate only the git icon, if you are unsatisfied with animating git together with the shadow icon using git-float ID
+    //   transform-origin: center;
+    //   transform-box: fill-box;
+    //   translate: -72.5px -5px;
+    //   animation: flip 4s ease-out infinite alternate;
+    // }
+    #floating-javascript{
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: wiggle 2s linear infinite;
+    }
+    #shadow6{
+      translate: -148.039px -318.759px;
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: shrink 2s linear infinite;
+    }
+    #floating-bootstrap{
+      transform-origin: center;
+      // transform-box: fill-box;
+      animation: float 1.5s linear infinite alternate,
+      distort 1s ease-in-out infinite alternate;
+    }
+    #shadow7{
+      transform-origin: center;
+      transform-box: fill-box;
+      translate: -106px -302px;
+      animation: shrink 1s linear infinite alternate-reverse;
+    }
+    #Upper-coffee-smoke,
+    #Lower-coffee-smoke{
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: flip 4s ease-out infinite alternate;
+    }
+    #floating-laptop{
+      animation: float 1s linear  infinite alternate;
+    }
+    #shadow11{
+      transform-origin: center;
+      animation: shrink 1s linear infinite alternate;
+    }
+    #floating-react{
+      transform-origin: center;
+      transform-box: fill-box;
+      translate: 10px 210px;
+      animation: rotate 4.5s linear infinite;
+    }
+  }
+}
+
+
+@keyframes rotate {
+  to{
+    rotate: 360deg;
+  }
+}
+
+@keyframes wiggle {
+  0%, 5% {
+    rotate: 0;
+  }
+  15%  {
+    rotate: -15deg;
+  }
+  20% {
+    rotate: 10deg;  
+  }
+  25% {
+    rotate: -10deg;
+  }
+  30% {
+    rotate: 6deg;
+  }
+  35% {
+    rotate: -4deg;
+  }
+  40%, 100%{
+    rotate: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, to{
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    transform: translateZ(0);
+  }
+  40%, 43%{
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70%{
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90%{
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes float {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes shrink {
+  from {
+    scale: .9;
+  }
+  to {
+    scale: 1.025;
+  }
+}
+
+@keyframes distort {
+  50% {
+    transform: skewX(7deg);
+  }
+  100% {
+    transform: skewX(-7deg);
+  }
+}
+
+@keyframes flip {
+  20%,
+  80% {
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(2px);
+    transform: translate(-4px, 2px) rotateY(180deg);
+  }
 }
 
 // RESPONSIVENESS ************************************************************************************
@@ -336,9 +513,3 @@ padding: 10rem 0;
   }
 }
 
-
-// @media (prefers-reduced-motion: no-preference) {
-//   a:nth-of-type(2) .logo {
-//     animation: logo-spin infinite 20s linear;
-//   }
-// }
