@@ -4,34 +4,33 @@ import "../scss/index.scss";
 
 // Page Custom Script
 let heroSvgs = document.querySelectorAll("#hero-svgs use");
-// let svgAnimationQue = [...heroSvgs];
-// let heroShowUpAnimation = document.querySelector("#intro-content .show-up");
-// let currentAnimatingSvg;
 let svgCounter = 0;
+let svgAnimationId = null
+let mobileScreen = matchMedia("(max-width: 991px)")
 
 
 let startHeroSvgAimation= ()=>{
     heroSvgs.forEach((e)=>{
         e.classList.contains("appear") ? e.classList.remove("appear") : null;
     }) 
-    let svgAnimationId = setInterval(() => {
+    svgAnimationId = setInterval(() => {
         heroSvgs[svgCounter].classList.remove('appear')
         svgCounter++
         heroSvgs[svgCounter] || (svgCounter = 0)
         heroSvgs[svgCounter].classList.add('appear')
-        // console.log(`${svgCounter} round`)
+        // console.log(`animation running ${svgCounter}`)
     }, 3000)
 }
 
-startHeroSvgAimation()
+mobileScreen.matches || startHeroSvgAimation()
 // ########################################################################
 
 let skills = document.getElementsByClassName("skill-set")[0]
 const viewPortObserver = new IntersectionObserver((entry)=>{
     entry.forEach((e)=>{
-        e.target === skills ? e.target.classList.toggle("viewable", e.isIntersecting) : null
         // e.target === skills ? e.target.classList.toggle("viewable", e.isIntersecting) : null
-        console.log(e.intersectionRatio)
+        e.target === skills && e.target.classList.toggle("viewable", e.isIntersecting) && console.log(e.boundingClientRect)
+        // clearInterval(svgAnimationId)
     })
 }, {
     threshold: 0.2

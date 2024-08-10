@@ -105,17 +105,7 @@ a.navbar-brand{
     // flex-basis max is 431px
     use {
       opacity: 0;
-      // animation: fade-in 3s ease-out infinite;
-      // animation-play-state: paused;
     }
-    // @media (prefers-reduced-motion: no-preference) {
-    //   .plaused-animation{
-    //     come back here when you want to try js triggered animation again
-    //   }
-    //   .play-animation{
-    //     animation-play-state: running;
-    //   }
-    // }
     .appear{
       opacity: 1;
       transition: opacity 1s ease-out;
@@ -242,6 +232,13 @@ a.navbar-brand{
       padding: 10px;
       background-color: var(--bs-dark);
       border-radius: 3%;
+      background-size: 400% 100%;
+    }
+    div:hover{
+      background-image: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+      background-clip: text;
+      color: transparent;
+      animation: rainbow_animation 3s ease-in-out infinite;
     }
   }
   .viewable {
@@ -256,6 +253,16 @@ a.navbar-brand{
   to  {
     translate: 0;
     opacity: 1;
+  }
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
   }
 }
 
@@ -378,7 +385,6 @@ a.navbar-brand{
     }
     #floating-bootstrap{
       transform-origin: center;
-      // transform-box: fill-box;
       animation: float 1.5s linear infinite alternate,
       distort 1s ease-in-out infinite alternate;
     }
@@ -488,10 +494,9 @@ a.navbar-brand{
   80% {
     opacity: 0.2;
   }
-
   50% {
     transform: translateY(2px);
-    transform: translate(-4px, 2px) rotateY(180deg);
+    transform: translate(-4px, 2px) rotateY(90deg);
   }
 }
 
