@@ -266,6 +266,31 @@ a.navbar-brand{
   }
 }
 
+// Portfolio Section #################################################################
+#portfolio{
+  .portfolio-content{
+    img{
+      aspect-ratio: 16/9;
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    h3{
+      font-size: 1.5rem;
+    }
+    text-align: center;
+    a{
+      color: white;
+      text-decoration: none;
+      transition: color, opacity .3s;
+    }
+    a:hover{
+      color: var(--bs-info);
+      opacity: 0.8;
+    }
+  }
+}
+
 // Journey Section ############################################################
 #journey{
   flex-wrap: wrap;

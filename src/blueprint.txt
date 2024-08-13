@@ -4,11 +4,9 @@ put a shadow overlay on the bottom of the hero image (look into css mask) (optio
 
 change favicon back to svg format
 
-Create rainbow animation for skillset block
-
 look into using the intersection observer to stop hero-animation once viewers scroll past the hero section
 
 Optimize images
+svg Sprite with SVGOMG
 - navbar icons= convert to png (except hamburger toggle icon)
-- Developer image on hero = convert to avif and webp as fall back
 - Delete either Logo or Favicon image and use one for both places. Just read more about favicon from the open tab
