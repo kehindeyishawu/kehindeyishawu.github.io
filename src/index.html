@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-5">
-                    <picture id="banner-img">
+                    <picture id="hero-img">
                         <source media="(max-width: 767px)" srcset="./image/developer-image-mobile.webp" type="img/webp">
                         <source media="(max-width: 767px)" srcset="./image/developer-image-mobile.jpeg" type="image/jpeg">
                         <source srcset="./image/developer-image.webp" type="image/webp">
@@ -212,25 +212,25 @@
             </div>
         </section>
         <section id="portfolio" class="top-spacing">
-            <nav class="tab-header mb-5 container d-none d-md-block">
-                <h2 class="lower-outline">Portfolio</h2>
-                <ul class="nav nav-tabs justify-content-around">
+            <h2 class="lower-outline">Portfolio</h2>
+            <nav class="tab-header mb-5 mb-lg-5 container">
+                <ul class="nav nav-tabs justify-content-evenly">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">All</a>
+                        <button class="nav-link" href="#">All</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Generic Websites</a>
+                        <button class="nav-link" href="#">Generic Websites</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Specialised Apps</a>
+                        <button class="nav-link" href="#">Specialized Apps</button>
                     </li>
                 </ul>
             </nav>
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-evenly">
                     <div class="col-auto d-none d-md-block">
-                        <button class="btn btn-outline-danger rounded-circle slide-button disabled">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+                        <button class="btn btn-outline-danger rounded-circle slide-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left"
                                 viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
@@ -238,7 +238,7 @@
                         </button>
                     </div>
                     <div class="col-md-9 col-lg-10">
-                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 align-items-start gy-4 portfolio-content">
+                        <div class="row row-cols-md-3 row-cols-lg-4 align-items-start gy-4 portfolio-content">
                             <div class="col">
                                 <a href="">
                                     <img src="./image/samp2.jpg" alt="">
@@ -296,10 +296,18 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="change-view d-md-none">
+                            <span>Expand View</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </div>
                     </div>
                     <div class="col-auto d-none d-md-block">
                         <button class="btn btn-outline-danger rounded-circle slide-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right"
                                 viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
