@@ -537,6 +537,10 @@ a.navbar-brand{
 
 // RESPONSIVENESS ************************************************************************************
 @media (max-width: 767px) {
+  #intro{
+    position: relative;
+    overflow-x: hidden;
+  }
   #hero-img {
     position: absolute;
     top: 49px;
