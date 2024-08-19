@@ -169,7 +169,7 @@ function refreshSlideContent(operation) {
         currentIndex = 0;
     }
 
-    // filtering portfolio database by index range (currentIndex and indexScope) and tags: V2
+    // filtering portfolio database by index range (currentIndex and indexScope) and tags
     let sortedList = []
     if (tagFilter === "All"){
         sortedList = portfolioDB
@@ -181,7 +181,6 @@ function refreshSlideContent(operation) {
     let newList = sortedList.filter((e, i)=>{
         return (i >= currentIndex && i < indexScope + currentIndex)
     })
-
 
     // evaluate and correct index ranges, plus disabling corresponding buttons
     if(currentIndex <= 0){
@@ -197,26 +196,13 @@ function refreshSlideContent(operation) {
         portfolioSlideButtons[1].removeAttribute("disabled")
     }
 
-    // filtering portfolio database by index range (currentIndex and indexScope) and tags
-    // let newList = []
-    // portfolioDB.forEach((e, i)=>{
-    //     if (i >= currentIndex && newList.length < indexScope){
-    //         if(tagFilter === "All"){
-    //             newList.push(e)
-    //         } else if (e.tag === tagFilter){
-    //             newList.push(e)
-    //         }
-    //     }
-    // })
-    // console.log(newList)
-
     // creating new portfolio Slide Content
     let portfolioContent = newList.map((e) => {
         let div = document.createElement("div")
         div.classList.add("col")
         let a = document.createElement("a")
         let img = document.createElement("img")
-        img.setAttribute("src", "./image/samp2.jpg")
+        img.setAttribute("src", "https://res.cloudinary.com/kkenny/image/upload/v1724084297/Web%20Portfolio/samp2_hidrov.jpg")
         let h3 = document.createElement("h3");
         h3.textContent = e.title;
         let p = document.createElement("p");

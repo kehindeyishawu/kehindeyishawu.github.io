@@ -1,12 +1,7 @@
-Revisit trying out animation, remember the animation could repeat twice in a role, so try out that stack-overflow advice on how to go about it
-
 put a shadow overlay on the bottom of the hero image (look into css mask) (optional though)
-
-change favicon back to svg format
-
-look into using the intersection observer to stop hero-animation once viewers scroll past the hero section
-
-Optimize images
-svg Sprite with SVGOMG
-- navbar icons= convert to png (except hamburger toggle icon)
 - Delete either Logo or Favicon image and use one for both places. Just read more about favicon from the open tab
+
+
+Optimization options:
+Cloudinary for images
+SVGOMG for svgs
