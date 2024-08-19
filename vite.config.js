@@ -1,7 +1,7 @@
 export default{
     root: "./src",
     build: {
-        outDir: "../dist"
+        outDir: "../docs"
     },
     server:{
         port: 8000
