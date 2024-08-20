@@ -538,7 +538,6 @@ a.navbar-brand{
 // RESPONSIVENESS ************************************************************************************
 @media (max-width: 767px) {
   #intro{
-    position: relative;
     overflow-x: hidden;
   }
   #hero-img {
@@ -584,6 +583,14 @@ a.navbar-brand{
       // Hide scrollbar for Firefox
       scrollbar-width: none;
       // Done removing scrollbar
+      .col{
+        flex-basis: 30%;
+        flex-grow: 0;
+        scroll-snap-align: start;
+      }
+      img{
+        aspect-ratio: 4/3;
+      }
       h3{
         font-size: .875rem;
         // font-size: 1rem;
@@ -591,11 +598,6 @@ a.navbar-brand{
       p{
         display: none;
         // font-size: .75rem;
-      }
-      .col{
-        flex-basis: 30%;
-        flex-grow: 0;
-        scroll-snap-align: start;
       }
     }
   }

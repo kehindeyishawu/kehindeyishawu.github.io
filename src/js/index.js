@@ -57,62 +57,62 @@ let portfolioDB = [
     {
         title: "IADS",
         desc: "Institute of African and Diaspora Studies (University of Lagos)",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
     {
         title: "Everything Church",
         desc: "A blogging website for christian content",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
     {
         title: "React Todo App",
         desc: "A complex todo app built with React",
-        tag: "Specialized Apps"
+        tag: "Lite Apps"
     },
     {
         title: "E-laudromat",
         desc: "An online laundry Service",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
     {
         title: "Mavnew",
         desc: "An affiliate blogging site for exercise bikes",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
     {
         title: "LACC",
         desc: "The Lagos African Cluster Centre",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
     {
         title: "NAMS-LASU",
         desc: "The Nigerian Association of Microbiology Students (Lagos State University)",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
     {
         title: "Candy Station",
         desc: "A marketing website for sale of candy variants",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
     {
         title: "The Piano Website",
         desc: "Make a sound just by pushing a keyboard button",
-        tag: "Specialized Apps"
+        tag: "Lite Apps"
     },
     {
         title: "Todo App",
         desc: "A classic todo app",
-        tag: "Specialized Apps"
+        tag: "Lite Apps"
     },
     {
         title: "RGB Color Game",
         desc: "A guessing color game",
-        tag: "Specialized Apps"
+        tag: "Lite Apps"
     },
     {
         title: "Education Website",
         desc: "Assiciation of Education Students",
-        tag: "Generic Websites"
+        tag: "Websites"
     },
 ]
 
