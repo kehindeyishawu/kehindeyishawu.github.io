@@ -1,6 +1,7 @@
 -put a shadow overlay on the bottom of the hero image (look into css mask) (optional though)
 - Delete either Logo or Favicon image and use one for both places. Just read more about favicon from the open tab
 - work on chrome compatibility with floating svgs
+- work on proper favicon as shown in Google Playstore (with logo) for aech portfolio app
 
 
 Optimization options:

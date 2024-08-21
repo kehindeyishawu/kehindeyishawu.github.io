@@ -49,6 +49,7 @@ viewPortObserver.observe(hero)
 let portfolioSlideButtons = document.querySelectorAll(".slide-button")
 let portfolioSlideContent = document.querySelector(".portfolio-content")
 let mobileChangeView = document.querySelector(".change-view")
+let portfolioNav = document.querySelector("#portfolio nav")
 let currentIndex = 0
 let indexScope;
 let tagFilter = "All";
@@ -57,6 +58,7 @@ let portfolioDB = [
     {
         title: "IADS",
         desc: "Institute of African and Diaspora Studies (University of Lagos)",
+        favicon: "",
         tag: "Websites"
     },
     {
@@ -137,6 +139,7 @@ mobileChangeView.addEventListener("click", ()=>{
     portfolioSlideContent.classList.toggle("flex-wrap")
     portfolioSlideContent.classList.toggle("justify-content-center")
     mobileChangeView.classList.toggle("expanded-view")
+    portfolioNav.classList.toggle("space-below")
     if(mobileChangeView.children[0].textContent === "Expand View"){
         mobileChangeView.children[0].textContent = "Collapse View"
     } else{
@@ -202,12 +205,21 @@ function refreshSlideContent(operation) {
         div.classList.add("col")
         let a = document.createElement("a")
         let img = document.createElement("img")
+        img.setAttribute("loading", "lazy")
         img.setAttribute("src", "https://res.cloudinary.com/kkenny/image/upload/v1724084297/Web%20Portfolio/samp2_hidrov.jpg")
+        img.classList.add("opacity-0")
         let h3 = document.createElement("h3");
         h3.textContent = e.title;
         let p = document.createElement("p");
         p.textContent = e.desc;
-        a.replaceChildren(img, h3, p)
+        let skeleton = document.createElement("div")
+        skeleton.classList.add("skeleton")
+        img.addEventListener("load", () => {
+            img.classList.remove("opacity-0")
+            skeleton.classList.remove("skeleton")
+        })
+        skeleton.replaceChildren(img)
+        a.replaceChildren(skeleton, h3, p)
         div.replaceChildren(a)
         return div;
     })

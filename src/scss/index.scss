@@ -270,15 +270,21 @@ a.navbar-brand{
 #portfolio{
   min-height: 660px;
   .portfolio-content{
+    .skeleton{
+      border-radius: 1rem;
+      animation: skeleton-loading 1s linear infinite alternate;
+      opacity: .7;
+    }
     img{
       aspect-ratio: 16/9;
       width: 100%;
       border-radius: 1rem;
-      margin-bottom: 1rem;
       object-fit: cover;
       object-position: top;
+      transition: opacity .4s;
     }
     h3{
+      margin-top: 1rem;
       font-size: calc(1rem + 20%);
       font-weight: bold;
     }
@@ -298,6 +304,15 @@ a.navbar-brand{
     .change-view{
       display: none;
     }
+  }
+}
+
+@keyframes skeleton-loading {
+  from {
+    background-color: hsl(200, 20%, 60%);
+  }
+  to {
+    background-color: hsl(200, 20%, 95%);
   }
 }
 
@@ -552,6 +567,12 @@ a.navbar-brand{
   #portfolio{
     position: relative;
     min-height: auto;
+    nav{
+      margin-bottom: 2.5rem;
+    }
+    .space-below{
+      margin-bottom: 4rem;
+    }
     .change-view{
       position: absolute;
       display: flex;
@@ -563,7 +584,7 @@ a.navbar-brand{
       cursor: pointer;
     }
     .expanded-view{
-      top: 8rem;
+      top: 8.6rem;
       span{
         order: 2;
       }
