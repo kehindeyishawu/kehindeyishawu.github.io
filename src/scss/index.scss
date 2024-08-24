@@ -595,7 +595,7 @@ a.navbar-brand{
     .portfolio-content{
       flex-wrap: nowrap;
       overflow-x: auto;
-      scroll-snap-type: x mandatory;
+      scroll-snap-type: x proximity;
       overscroll-behavior: contain;
       // Hide scrollbar for Chrome, Safari, Edge and Opera
       &::-webkit-scrollbar{
