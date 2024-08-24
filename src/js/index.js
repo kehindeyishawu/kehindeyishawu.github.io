@@ -56,19 +56,19 @@ let tagFilter = "All";
 let portfoliotabs = document.querySelectorAll("#portfolio .nav-tabs button")
 let portfolioDB = [
     {
-        title: "IADS",
-        desc: "Institute of African and Diaspora Studies (University of Lagos)",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724222317/Web%20Portfolio/iads.png`,
-        link: "https://iads.unilag.edu.ng",
-        alt: "IADS Favicon",
-        tag: "Websites"
-    },
-    {
         title: "Everything Church",
         desc: "A blogging website for christian content",
         favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724380984/Web%20Portfolio/everythingchurch.png`,
         link: "https://everything-church.onrender.com/",
         alt: "Everything Church Favicon",
+        tag: "Websites"
+    },
+    {
+        title: "IADS",
+        desc: "Institute of African and Diaspora Studies (University of Lagos)",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724222317/Web%20Portfolio/iads.png`,
+        link: "https://iads.unilag.edu.ng",
+        alt: "IADS Favicon",
         tag: "Websites"
     },
     {
