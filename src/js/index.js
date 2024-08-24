@@ -58,22 +58,33 @@ let portfolioDB = [
     {
         title: "IADS",
         desc: "Institute of African and Diaspora Studies (University of Lagos)",
-        favicon: "",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724222317/Web%20Portfolio/iads.png`,
+        link: "https://iads.unilag.edu.ng",
+        alt: "IADS Favicon",
         tag: "Websites"
     },
     {
         title: "Everything Church",
         desc: "A blogging website for christian content",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724380984/Web%20Portfolio/everythingchurch.png`,
+        link: "https://everything-church.onrender.com/",
+        alt: "Everything Church Favicon",
         tag: "Websites"
     },
     {
         title: "React Todo App",
         desc: "A complex todo app built with React",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724470713/Web%20Portfolio/React-todo-app.png`,
+        link: "https://todo-complex-app.netlify.app/",
+        alt: "React Todo App Favicon",
         tag: "Lite Apps"
     },
     {
-        title: "E-laudromat",
-        desc: "An online laundry Service",
+        title: "Wash & Dress",
+        desc: "An online campus laundry Service",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724478073/Web%20Portfolio/dress-and-wash.png`,
+        link: "https://wash-and-dress.onrender.com",
+        alt: "Wash & Dress Favicon",
         tag: "Websites"
     },
     {
@@ -204,9 +215,11 @@ function refreshSlideContent(operation) {
         let div = document.createElement("div")
         div.classList.add("col")
         let a = document.createElement("a")
-        let img = document.createElement("img")
+        a.setAttribute("href", e.link || "");
+        let img = document.createElement("img");
         img.setAttribute("loading", "lazy")
-        img.setAttribute("src", "https://res.cloudinary.com/kkenny/image/upload/v1724084297/Web%20Portfolio/samp2_hidrov.jpg")
+        img.setAttribute("src", e.favicon || "https://res.cloudinary.com/kkenny/image/upload/v1724084297/Web%20Portfolio/samp2_hidrov.jpg")
+        img.setAttribute("alt", e.alt || "");
         img.classList.add("opacity-0")
         let h3 = document.createElement("h3");
         h3.textContent = e.title;
@@ -226,4 +239,3 @@ function refreshSlideContent(operation) {
     // Refreshing Portfolio Slide content
     portfolioSlideContent.replaceChildren(...portfolioContent)
 }
-
