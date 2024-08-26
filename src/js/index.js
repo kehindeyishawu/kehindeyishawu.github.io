@@ -90,41 +90,65 @@ let portfolioDB = [
     {
         title: "Mavnew",
         desc: "An affiliate blogging site for exercise bikes",
+        favicon: ``,
+        link: "",
+        alt: "Mavnew Favicon",
         tag: "Websites"
     },
     {
         title: "LACC",
         desc: "The Lagos African Cluster Centre",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724540127/Web%20Portfolio/lacc.png`,
+        link: "https://iads.unilag.edu.ng/lacc",
+        alt: "Lagos African Cluster Centre Favicon",
         tag: "Websites"
     },
     {
         title: "NAMS-LASU",
         desc: "The Nigerian Association of Microbiology Students (Lagos State University)",
+        favicon: ``,
+        link: "",
+        alt: "",
         tag: "Websites"
     },
     {
         title: "Candy Station",
         desc: "A marketing website for sale of candy variants",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724630741/Web%20Portfolio/candy-station.png`,
+        link: "https://candystation.netlify.app/",
+        alt: "Candy Station Favicon",
         tag: "Websites"
     },
     {
         title: "The Piano Website",
         desc: "Make a sound just by pushing a keyboard button",
+        favicon: ``,
+        link: "",
+        alt: "",
         tag: "Lite Apps"
     },
     {
         title: "Todo App",
         desc: "A classic todo app",
+        favicon: ``,
+        link: "",
+        alt: "",
         tag: "Lite Apps"
     },
     {
         title: "RGB Color Game",
         desc: "A guessing color game",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724594553/Web%20Portfolio/RGB-color-game.png`,
+        link: "https://bestrgbgame.netlify.app/",
+        alt: "RGB Color Game Favicon",
         tag: "Lite Apps"
     },
     {
         title: "Education Website",
         desc: "Assiciation of Education Students",
+        favicon: ``,
+        link: "",
+        alt: "",
         tag: "Websites"
     },
 ]
