@@ -2,6 +2,9 @@
 - Delete either Logo or Favicon image and use one for both places. Just read more about favicon from the open tab
 - work on chrome compatibility with floating svgs
 - work on proper favicon as shown in Google Playstore (with logo) for aech portfolio app
+- gzip website content
+- defer youtube video or consider hostig on cloudinary
+- transfer some other images, like hero & favicon to cloudinary
 
 
 Optimization options:

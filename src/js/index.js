@@ -98,7 +98,7 @@ let portfolioDB = [
     {
         title: "LACC",
         desc: "The Lagos African Cluster Centre",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724540127/Web%20Portfolio/lacc.png`,
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724644796/Web%20Portfolio/African-Cluster-Centre-Unilag.png`,
         link: "https://iads.unilag.edu.ng/lacc",
         alt: "Lagos African Cluster Centre Favicon",
         tag: "Websites"
@@ -122,9 +122,9 @@ let portfolioDB = [
     {
         title: "The Piano Website",
         desc: "Make a sound just by pushing a keyboard button",
-        favicon: ``,
-        link: "",
-        alt: "",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724644809/Web%20Portfolio/piano-website.png`,
+        link: "https://pianowebsite.netlify.app/",
+        alt: "The Piano Website Favicon",
         tag: "Lite Apps"
     },
     {
