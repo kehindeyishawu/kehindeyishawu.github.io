@@ -129,10 +129,10 @@ let portfolioDB = [
     },
     {
         title: "Todo App",
-        desc: "A classic todo app",
-        favicon: ``,
-        link: "",
-        alt: "",
+        desc: "A simple todo app",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724727372/Web%20Portfolio/Todo-List.png`,
+        link: "https://plain-todo.netlify.app/",
+        alt: "Todo App Favicon",
         tag: "Lite Apps"
     },
     {
