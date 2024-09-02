@@ -146,9 +146,9 @@ let portfolioDB = [
     {
         title: "Education Website",
         desc: "Assiciation of Education Students",
-        favicon: ``,
-        link: "",
-        alt: "",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1725294590/Web%20Portfolio/education.png`,
+        link: "https://facultyedu.onrender.com",
+        alt: "Education Website Favicon",
         tag: "Websites"
     },
 ]
