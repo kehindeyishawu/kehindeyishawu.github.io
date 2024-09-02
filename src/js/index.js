@@ -90,8 +90,8 @@ let portfolioDB = [
     {
         title: "Mavnew",
         desc: "An affiliate blogging site for exercise bikes",
-        favicon: ``,
-        link: "",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724985350/Web%20Portfolio/mavbike.png`,
+        link: "https://mavnew.onrender.com",
         alt: "Mavnew Favicon",
         tag: "Websites"
     },
@@ -106,9 +106,9 @@ let portfolioDB = [
     {
         title: "NAMS-LASU",
         desc: "The Nigerian Association of Microbiology Students (Lagos State University)",
-        favicon: ``,
-        link: "",
-        alt: "",
+        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1725277203/Web%20Portfolio/namslasu.png`,
+        link: "https://namslasu.onrender.com",
+        alt: "NAMSLASU Favicon",
         tag: "Websites"
     },
     {
