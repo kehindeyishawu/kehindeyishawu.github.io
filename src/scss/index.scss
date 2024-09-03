@@ -269,6 +269,9 @@ a.navbar-brand{
 // Portfolio Section #################################################################
 #portfolio{
   min-height: 660px;
+  .nav{
+    --bs-nav-link-color: var(--bs-info);
+  }
   .portfolio-content{
     .skeleton{
       border-radius: 1rem;
