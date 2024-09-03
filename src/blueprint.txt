@@ -5,6 +5,7 @@
 - gzip website content
 - defer youtube video or consider hostig on cloudinary
 - transfer some other images, like hero & favicon to cloudinary
+- migrate back default vite setting with js input
 
 
 Optimization options:
