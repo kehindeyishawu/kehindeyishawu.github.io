@@ -56,9 +56,17 @@ let tagFilter = "All";
 let portfoliotabs = document.querySelectorAll("#portfolio .nav-tabs button")
 let portfolioDB = [
     {
+        title: "Fnmilove Academy",
+        desc: "A Vocational Academy",
+        favicon: `Fnmilove-Academy`,
+        link: "https://fnmilove.netlify.app",
+        alt: "Fnmilove Academy Favicon",
+        tag: "Websites"
+    },
+    {
         title: "Everything Church",
         desc: "A blogging website for christian content",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724380984/Web%20Portfolio/everythingchurch.png`,
+        favicon: `everythingchurch`,
         link: "https://everything-church.onrender.com/",
         alt: "Everything Church Favicon",
         tag: "Websites"
@@ -66,7 +74,7 @@ let portfolioDB = [
     {
         title: "IADS",
         desc: "Institute of African and Diaspora Studies (University of Lagos)",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724222317/Web%20Portfolio/iads.png`,
+        favicon: `iads`,
         link: "https://iads.unilag.edu.ng",
         alt: "IADS Favicon",
         tag: "Websites"
@@ -74,7 +82,7 @@ let portfolioDB = [
     {
         title: "React Todo App",
         desc: "A complex todo app built with React",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches?"ar_4:3,w_250":"ar_16:9,w_400"},${"dpr_"+devicePixelRatio}/v1724470713/Web%20Portfolio/React-todo-app.png`,
+        favicon: `React-todo-app`,
         link: "https://todo-complex-app.netlify.app/",
         alt: "React Todo App Favicon",
         tag: "Lite Apps"
@@ -82,7 +90,7 @@ let portfolioDB = [
     {
         title: "Wash & Dress",
         desc: "An online campus laundry Service",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724478073/Web%20Portfolio/dress-and-wash.png`,
+        favicon: `dress-and-wash`,
         link: "https://wash-and-dress.onrender.com",
         alt: "Wash & Dress Favicon",
         tag: "Websites"
@@ -90,7 +98,7 @@ let portfolioDB = [
     {
         title: "Mavnew",
         desc: "An affiliate blogging site for exercise bikes",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724985350/Web%20Portfolio/mavbike.png`,
+        favicon: `mavbike`,
         link: "https://mavnew.onrender.com",
         alt: "Mavnew Favicon",
         tag: "Websites"
@@ -98,7 +106,7 @@ let portfolioDB = [
     {
         title: "LACC",
         desc: "The Lagos African Cluster Centre",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724644796/Web%20Portfolio/African-Cluster-Centre-Unilag.png`,
+        favicon: `African-Cluster-Centre-Unilag`,
         link: "https://iads.unilag.edu.ng/lacc",
         alt: "Lagos African Cluster Centre Favicon",
         tag: "Websites"
@@ -106,7 +114,7 @@ let portfolioDB = [
     {
         title: "NAMS-LASU",
         desc: "The Nigerian Association of Microbiology Students (Lagos State University)",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1725277203/Web%20Portfolio/namslasu.png`,
+        favicon: `namslasu`,
         link: "https://namslasu.onrender.com",
         alt: "NAMSLASU Favicon",
         tag: "Websites"
@@ -114,7 +122,7 @@ let portfolioDB = [
     {
         title: "Candy Station",
         desc: "A marketing website for sale of candy variants",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724630741/Web%20Portfolio/candy-station.png`,
+        favicon: `candy-station`,
         link: "https://candystation.netlify.app/",
         alt: "Candy Station Favicon",
         tag: "Websites"
@@ -122,7 +130,7 @@ let portfolioDB = [
     {
         title: "The Piano Website",
         desc: "Make a sound just by pushing a keyboard button",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724644809/Web%20Portfolio/piano-website.png`,
+        favicon: `piano-website`,
         link: "https://pianowebsite.netlify.app/",
         alt: "The Piano Website Favicon",
         tag: "Lite Apps"
@@ -130,7 +138,7 @@ let portfolioDB = [
     {
         title: "Todo App",
         desc: "A simple todo app",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724727372/Web%20Portfolio/Todo-List.png`,
+        favicon: `Todo-List`,
         link: "https://plain-todo.netlify.app/",
         alt: "Todo App Favicon",
         tag: "Lite Apps"
@@ -138,7 +146,7 @@ let portfolioDB = [
     {
         title: "RGB Color Game",
         desc: "A guessing color game",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1724594553/Web%20Portfolio/RGB-color-game.png`,
+        favicon: `RGB-color-game`,
         link: "https://bestrgbgame.netlify.app/",
         alt: "RGB Color Game Favicon",
         tag: "Lite Apps"
@@ -146,7 +154,7 @@ let portfolioDB = [
     {
         title: "Education Website",
         desc: "Assiciation of Education Students",
-        favicon: `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/v1725294590/Web%20Portfolio/education.png`,
+        favicon: `education`,
         link: "https://facultyedu.onrender.com",
         alt: "Education Website Favicon",
         tag: "Websites"
@@ -242,7 +250,7 @@ function refreshSlideContent(operation) {
         a.setAttribute("href", e.link || "");
         let img = document.createElement("img");
         img.setAttribute("loading", "lazy")
-        img.setAttribute("src", e.favicon || "https://res.cloudinary.com/kkenny/image/upload/v1724084297/Web%20Portfolio/samp2_hidrov.jpg")
+        img.setAttribute("src", `https://res.cloudinary.com/kkenny/image/upload/c_fill,q_auto,f_auto,${smallScreen.matches ? "ar_4:3,w_250" : "ar_16:9,w_400"},${"dpr_" + devicePixelRatio}/Web%20Portfolio/${e.favicon}` || "https://res.cloudinary.com/kkenny/image/upload/v1724084297/Web%20Portfolio/samp2_hidrov.jpg")
         img.setAttribute("alt", e.alt || "");
         img.classList.add("opacity-0")
         let h3 = document.createElement("h3");
@@ -263,3 +271,20 @@ function refreshSlideContent(operation) {
     // Refreshing Portfolio Slide content
     portfolioSlideContent.replaceChildren(...portfolioContent)
 }
+
+// Developer contact button phase-in
+let contactButton = document.querySelectorAll(".contact-button")
+let contactAddress = document.querySelector("#contact-address")
+let contactButtonEmail = document.querySelector("#contact-email")
+contactButton.forEach(e => {
+    e.addEventListener("click", () => {
+        contactAddress.textContent !== "kehinde.yishawu@gmail.com" ? contactAddress.textContent = "kehinde.yishawu@gmail.com" : null;
+    })
+})
+
+contactButtonEmail.addEventListener("click", ()=>{
+    contactButtonEmail.classList.add("opacity-0")
+})
+contactButtonEmail.addEventListener("transitionend", ()=>{
+    contactAddress.textContent = "kehinde.yishawu@gmail.com"
+})
