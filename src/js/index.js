@@ -59,7 +59,7 @@ let portfolioDB = [
         title: "Fnmilove Academy",
         desc: "A Vocational Academy",
         favicon: `Fnmilove-Academy`,
-        link: "https://fnmilove.netlify.app",
+        link: "https://fnmilove.com",
         alt: "Fnmilove Academy Favicon",
         tag: "Websites"
     },
