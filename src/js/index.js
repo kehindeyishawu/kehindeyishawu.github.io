@@ -28,7 +28,10 @@ let restartHeroSvgAnimation = ()=>{
     svgAnimationId || startHeroSvgAimation()
 }
 let stopHeroSvgAnimation = ()=>{
-    svgAnimationId && clearInterval(svgAnimationId) || (svgAnimationId = null)
+    if (svgAnimationId) {
+        clearInterval(svgAnimationId);
+        svgAnimationId = null;
+    }
 }
 
 // Skill set Partial Section ########################################################################
@@ -36,14 +39,14 @@ let skills = document.getElementsByClassName("skill-set")[0]
 const viewPortObserver = new IntersectionObserver((entry)=>{
     entry.forEach((e)=>{
         e.target === skills && e.target.classList.toggle("viewable", e.isIntersecting)
-        e.target === hero && e.isIntersecting && !mediumScreen.matches ? restartHeroSvgAnimation() : stopHeroSvgAnimation()
+        e.target === heroSection && e.isIntersecting && !mediumScreen.matches ? restartHeroSvgAnimation() : stopHeroSvgAnimation()
     })
 }, {
     threshold: 0.2
 })
 
 viewPortObserver.observe(skills)
-viewPortObserver.observe(hero)
+viewPortObserver.observe(heroSection)
 
 // POrtfolio partial Section
 let portfolioSlideButtons = document.querySelectorAll(".slide-button")

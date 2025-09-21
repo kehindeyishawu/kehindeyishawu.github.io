@@ -329,7 +329,7 @@ a.navbar-brand{
   gap: 0;
   iframe{
     aspect-ratio: 16/9;
-    flex-grow: 1;
+    width: 50%;
   }
   
 }
@@ -632,7 +632,7 @@ a.navbar-brand{
     }
   }
   #journey{
-    img{
+    img, iframe{
       width: 100%;
     }
   }
