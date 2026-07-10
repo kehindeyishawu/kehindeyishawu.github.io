@@ -59,6 +59,14 @@ let tagFilter = "All";
 let portfoliotabs = document.querySelectorAll("#portfolio .nav-tabs button")
 let portfolioDB = [
     {
+        title: "Basic Sharp Services",
+        desc: "A Sharp Products Distribution and Service Website",
+        favicon: `BSS`,
+        link: "https://basicsharpservice.com",
+        alt: "BSS-Favicon",
+        tag: "Websites"
+    },
+    {
         title: "Fnmilove Academy",
         desc: "A Vocational Academy",
         favicon: `Fnmilove-Academy`,
